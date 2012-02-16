@@ -1,0 +1,199 @@
+/*
+ * This file is a base for the yahdrib theme. It is not used asis.
+ */
+
+/* ============================ *
+ * ==| Internationalization |== *
+ * ============================ */
+
+/*!in18n*/
+
+/*
+ * Adds visual support for elements that are not in the language of the parent element.
+ * Supported language defined below are English, Spanish, and French.
+ * Additional languages can be easily added or removed.
+ * Compatibility due to the `:not` selector: IE 9+, Firefox 3.5+, Chrome, Safari 3.2+, Opera 9.5+
+ * yahdrib
+ */
+:not(:lang(en)) [lang|="en"]:before,
+:not(:lang(es)) [lang|="es"]:before,
+:not(:lang(fr)) [lang|="fr"]:before
+{
+  display: block;
+  margin: 0.5em -0.5em;
+  font-size: 85%;
+  color: #777;
+}
+:not(:lang(en)) [lang|="en"],
+:not(:lang(es)) [lang|="es"],
+:not(:lang(fr)) [lang|="fr"]
+{
+  padding-left: 1em;
+  border-left: 1px dotted #777;
+  opacity: 0.7;
+  display: block;
+}
+
+/* Use HEX escaped encoding for special characters; http://www.ascii.cl/htmlcodes.htm */
+:not(:lang(en)) [lang|="en"]:before{ content:"English"; }
+:not(:lang(es)) [lang|="es"]:before{ content:"Espa\00f1 ol"; }
+:not(:lang(fr)) [lang|="fr"]:before{ content:"Fran\00e7 ais"; }
+
+
+/* ===================== *
+ * ==| Yahdrib Theme |== *
+ * ===================== */
+
+/*!Theme*/
+
+/* Chromeframe prompt */
+.chromeframe {
+  margin: 0.2em 0; /* h5bp */
+  /*padding: 0.2em 0; /* h5bp */
+  /*background: #ccc; /* h5bp */
+  /*color: black; /* h5bp */
+  /* yahdrib */
+  padding: 0.5em;
+  background-color: #fdd;
+  border: 1px solid #f00; border-left: 0; border-right: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*
+ * Below the previously declared default theme.
+ * Customize or remove unchanged
+ */
+
+body {
+  /*line-height: 1.4; /* h5bp */
+  line-height: 1.5; /* Clear and readable, calculated as integer; yahdrib */
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  /*font-family: sans-serif; /* normalize.css */
+  color: #222; /* ~ off black rgb(34,34,34) hsl(0,0%,13%); h5bp */
+  font-family: Arial, Helvetica, sans-serif; /* web safe; yahdrib */
+}
+
+::-moz-selection {
+  color: #fff;
+  /*background: #fe57a1; /* ~ hot pink rgb(254,87,161) hsl(333,99%,67%); h5bp */
+  background: #39f; /* ~ shiny blue rgb(51,153,255) hsl(210,100%,60%); yahdrib */
+}
+::selection {
+  color: #fff;
+  /*background: #fe57a1; /* ~ hot pink rgb(254,87,161) hsl(333,99%,67%); h5bp */
+  background: #39f; /* ~ shiny blue rgb(51,153,255) hsl(210,100%,60%); yahdrib */
+}
+
+a {
+  /*color: #00e; /* ~ dark blue rgb(0,0,238) hsl(240,100%,47%); h5bp */
+  color: #39f; /* ~ shiny blue rgb(51,153,255) hsl(210,100%,60%); yahdrib */
+  text-decoration: none; /* yahdrib */
+}
+a:visited {
+  /*color: #551a8b; /* ~ purple rgb(85,26,139) hsl(271,68%,32%); h5bp */
+  color: #639; /* ~ purple rgb(102,51,153) hsl(270,50%,40%); yahdrib */
+}
+a:hover,
+a:active {
+  /*color: #06e; /* ~ light blue rgb(0,102,238) hsl(214,100%,47%); h5bp */
+  color: #39f; /* ~ shiny blue rgb(51,153,255) hsl(210,100%,60%); yahdrib */
+  text-decoration: underline; /* yahdrib */
+}
+
+blockquote {
+  /*margin: 1em 40px; /* normalize.css */
+  margin: 0.5em 1.5em; /* yahdrib */
+  padding: 0.5em 1em; /* yahdrib */
+}
+
+hr {
+  border-top: 1px solid #ccc; /* light grey rgb(204,204,204) hsl(0,0%,80%); h5bp */
+}
+
+ins {
+  color: #000; 
+  background: #ff9; /* ~ light yellow rgb(255,255,153) hsl(60,100%,80%); h5bp */
+}
+
+mark {
+  color: #000; 
+  background: #ff0; /* yellow rgb(255,255,0) hsl(60,100%,50%); normalize.css, h5bp */
+}
+
+p,
+pre {
+  /*margin: 1em 0; /* orginal normalize.css */
+  margin: 0 0 1em 0; /* yahdrib */
+}
+
+p {
+  text-align: justify; /* yahdrib */
+}
+
+h1 {
+  /*font-size: 2em; /* calc 32px; normalize.css */
+  /*margin: 0.67em 0; /* calc 21px; normalize.css */
+  font-size: 2em; /* calc 32px; yahdrib */
+}
+h2 {
+  /*font-size: 1.5em; /* calc 24px; normalize.css */
+  /*margin: 0.83em 0; /* calc 19px; normalize.css */
+  font-size: 1.625em; /* calc 26px; yahdrib */
+}
+h3 {
+  /*font-size: 1.17em; /* calc 19px; normalize.css */
+  /*margin: 1em 0; /* calc 18px; normalize.css */
+  font-size: 1.375em; /* calc 22px; yahdrib */
+}
+h4 {
+  /*font-size: 1em; /* calc 16px; normalize.css */
+  /*margin: 1.33em 0; /* calc 21px; normalize.css */
+  font-size: 1em; /* calc 16px; yahdrib */
+}
+h5 {
+  /*font-size: 0.83em; /* calc 13px; normalize.css */
+  /*margin: 1.67em 0; /* calc 22px; normalize.css */
+  font-size: 0.875em; /* calc 14px; yahdrib */
+}
+h6 {
+  /*font-size: 0.75em; /* calc 12px; normalize.css */
+  /*margin: 2.33em 0; /* calc 27px; normalize.css */
+  font-size: 0.75em; /* calc 12px; yahdrib */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.75em 0;
+  line-height: 1;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; /* normalize.css */
+  /*padding: 0 0 0 40px; /* normalize.css */
+  padding: 0 0 0 2.5em; /* yahdrib */
+}
+
+dd {
+  /*margin: 0 0 0 40px; /* normalize.css */
+  margin: 0 0 0 2.5em; /* yahdrib */
+}
+
+/* Colors for form validity */
+input:valid,
+textarea:valid {
+}
+input:invalid,
+textarea:invalid {
+  /*background-color: #f0dddd; /* ~ redish rgb(240,221,221) hsl(0,39%,90%); h5bp */
+  background-color: #fdd; /* ~ light red rgb(255,221,221) hsl(0,100%,93%); yahdrib */
+}
+

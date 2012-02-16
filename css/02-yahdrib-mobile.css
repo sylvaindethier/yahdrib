@@ -1,0 +1,63 @@
+/* ============================= *
+ * ==| Narrow yahdrib layout |== *
+ * ============================= */
+
+/*!Mobile*/
+
+.wrapper {
+  max-width: 30em;
+  margin: auto;
+  padding: 0 0.5em;
+}
+
+/* Reduce margins & paddings */
+h1, h2, h3, h4, h5, h6 { margin: 0.25em 0; }
+
+p, pre { margin: 0 0 0.5em 0; }
+
+nav li { float:left; display: block; }
+
+nav *[data-items="2"] li { width: 50%; }
+nav *[data-items="3"] li { width: 33.33%; }
+nav *[data-items="4"] li { width: 25%; }
+nav *[data-items="5"] li { width: 20%; }
+nav *[data-items="6"] li { width: 16.66%; }
+
+nav a {
+  display: block;
+  margin: 0 0.25em;
+  padding: 0.5em 0;
+  font-weight: bold;
+  text-align: center;
+}
+nav li:first-child a { margin-left:  0; }
+nav li:last-child a  { margin-right: 0; }
+
+#content { padding: 1em 0; }
+
+/* ===================== *
+ * ==| Author styles |== *
+ * ===================== */
+
+/*!START customize*/
+
+/*
+ * Blue Colors
+ *   shiny blue:  #39f
+ *   dark blue:   #159
+ */
+
+#head           { border-bottom: 0.5em solid #159; }
+#sidebar, #foot { border-top:    0.5em solid #159; }
+#head, #sidebar, #foot { color: #fff; background: #39f; }
+
+#head ::-moz-selection, #sidebar ::-moz-selection, #foot ::-moz-selection { color: #222; background: #fff; }
+#head ::selection, #sidebar ::selection, #foot ::selection { color: #222; background: #fff; }
+
+nav a { background: #159; color: #fff !important; }
+
+#sidebar { padding: 0 1em 0.5em; }
+
+#foot {padding: 1em 0 0; text-align: center;}
+
+/*!END customize*/

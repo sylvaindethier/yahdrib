@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head id="www-sitename-com" data-template-set="yahdrib">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- DNS prefetching for CDN, prefer using href as "//cdn.example.com" h5bp.com/d/head-Tips; html5boilerplate.com/docs/DNS-Prefetching -->
+  <!--<link rel="dns-prefetch" href="//cdn.example.com">-->
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="cleartype" content="on">
+
+  <title>Page/Website title</title>
+  <meta name="title" content="">
+  <!-- Google will often use this as its description of your page/site. Make it good. -->
+  <meta name="description" content="">
+
+  <meta name="author" content="Your Name Here">
+  <link rel="author" type="text/plain" href="/humans.txt"> <!-- See humanstxt.org/Standard.html for more informations -->
+  <meta name="Copyright" content="Copyright Your-Name-Here The-Date-Here. All Rights Reserved.">
+
+  <!-- Dublin Core Metadata : http://dublincore.org/ -->
+  <meta name="DC.title" content="Project Name">
+  <meta name="DC.subject" content="What you're about.">
+  <meta name="DC.creator" content="Who made this site.">
+
+  <!-- Google Webmaster site verification ID google.com/webmasters -->
+  <meta name="google-site-verification" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place the favicon root directory: mathiasbynens.be/notes/touch-icons
+        apple-touch-icon-114x114-precomposed.png  (114px * 114px)
+        apple-touch-icon-72x72-precomposed.png    (72px * 72px)
+        apple-touch-icon-57x57-precomposed.png    (57px * 57px)
+        apple-touch-icon-precomposed.png          (57px * 57px)
+        apple-touch-icon.png                      (57px * 57px)
+        favicon.ico                               (16px * 16px) -->
+  <!-- Uncomment to take care of Android platforms -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  -->
+
+  <!-- Sitemap, Atom Feed (prefer using this format), RSS Feed -->
+  <!--
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml -}}">
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+  -->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+
+  <!-- Resolution Independent Design stylesheets
+          1. Narrow stylesheet for all media including CSS normalizer, small and mobile screens; so keep it simple and light.
+          2. Wider stylesheet for media w/ 34.25em {548px} minimal width [30em {480px} + (2 * 1.5em) + 1.25em = 34.25em]
+              Values from `bigger.css` file [width + 2 * padding + scrollbar-width]
+              Assuming maximal browsers scrollbar-width is 20px (equiv. 1.25em w/ 16px <=> 1em) -->
+  <link rel="stylesheet" href="css/shared.min.css" media="all">
+  <link rel="stylesheet" href="css/wider.min.css" media="all and (min-width: 34.25em)">
+  <!--[if (lt IE 9) & (!IEMobile)]> <link rel="stylesheet" href="css/wider.css" media="all"> <![endif]-->
+
+  <!-- Helpers first, then print styles declared after all styles and custom theme, lets embed them inline.
+       Remove this un-minified styles, it's here just to explain.
+  <style type="text/css">
+    /* =============== *
+     * ==| Helpers |== *
+     * =============== */
+
+    /* For image replacement */
+    .ir,
+    .img-replace {
+      display: block;
+      border: 0;
+      text-indent: -999em;
+      overflow: hidden;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      text-align: left;
+      direction: ltr;
+      *line-height: 0;
+    }
+    .ir br,
+    .img-replace {
+      display: none;
+    }
+
+    /* Hide from both screenreaders and browsers: h5bp.com/u */
+    .hidden {
+      display: none !important;
+      visibility: hidden;
+    }
+
+    /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+
+    /* Hide visually and from screenreaders, but maintain layout */
+    .invisible {
+      visibility: hidden;
+    }
+
+    /* Micro Clearfix contain floats: h5bp.com/q; IE6+, FF3.5+, S4+, O9+, Chr
+     * If legacy browsers support needed, use the Legacy Clearfix version below */
+    .clearfix:before,
+    .clearfix:after {
+      content: "";
+      display: table;
+    }
+    .clearfix:after {
+      clear: both;
+    }
+    .clearfix {
+      *zoom: 1; /* IE 6/7 */
+    }
+
+    /* Legacy cross-browser clearfix
+     *   http://www.webtoolkit.info/css-clearfix.html
+     *   http://umairj.com/68/css-clearfix-best-cross-browser-solution/
+     *   https://gist.github.com/935783/
+     *   http://css-tricks.com/snippets/css/clear-fix/
+     *   http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/
+     */
+    .clearfix:before,
+    .clearfix:after {
+      content: " "; /* FF 2+ */
+      display: block;
+      height: 0;
+      font-size:0;
+      line-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    .clearfix:after {
+      clear: both;
+    }
+    .clearfix {
+      *zoom: 1; /* IE < 8 */
+    }
+    .clearfix.has-width {
+      display: inline-block;
+      width: inherit
+    }
+    * html .clearfix {
+      height: 1%;
+      overflow: visible;
+    }
+
+    /* ==================== *
+     * ==| Print styles |== *
+     * ==================== */
+    @media print {
+      * {
+        background: transparent !important;
+        color: black !important; /* Black prints faster: h5bp.com/s */
+        -webkit-box-shadow: none !important;
+           -moz-box-shadow: none !important
+                box-shadow: none !important;
+        text-shadow: none !important;
+        -ms-filter: none !important;
+            filter: none !important;
+      }
+      a,
+      a:visited {
+        text-decoration: underline;
+      }
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
+      abbr[title]:after {
+        content: " (" attr(title) ")";
+      }
+      .ir a:after,
+      .img-replace a:after,
+      a[href^="javascript:"]:after,
+      a[href^="#"]:after {
+        content: ""; /* Don't show links for images, or javascript/internal links */
+      }
+      pre,
+      blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+      }
+      thead {
+        display: table-header-group; /* h5bp.com/t */
+      }
+      tr,
+      img {
+        page-break-inside: avoid;
+      }
+      img {
+        max-width: 100% !important;
+      }
+      @page {
+        margin: 0.5cm;
+      }
+      p,
+      h2,
+      h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+    }
+  </style>
+  <!-->
+
+  <!-- Minified helpers w/ micro clearfix plus print styles -->
+  <style type="text/css">.ir,.img-replace{display:block;border:0;text-indent:-999em;overflow:hidden;background-color:transparent;background-repeat:no-repeat;text-align:left;direction:ltr;*line-height:0}.ir br,.img-replace{display:none}.hidden{display:none!important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}@media print {*{background:transparent!important;color:black!important;-webkit-box-shadow:none!important;-moz-box-shadow:none!important box-shadow:none!important;text-shadow:none!important;-ms-filter:none!important;filter:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,.img-replace a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}</style>
+
+
+  <!-- All JavaScript at the bottom, except this Modernizr 2.5.2 + Respond.js 1.1.0 build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script type="text/javascript" src="js/libs/modernizr-2.5.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade&nbsp;to&nbsp;a&nbsp;different&nbsp;browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install&nbsp;Google&nbsp;Chrome&nbsp;Frame</a> to experience this site.</p><![endif]-->
+
+  <div id="head">
+      <header role="banner" id="head-wrapper" class="clearfix wrapper">
+        <hgroup class="primary">
+          <h1>Title</h1>
+          <!--<h2>Headline</h2>-->
+        </hgroup>
+
+        <nav class="secondary">
+          <ul class="clearfix" data-items="3"><!-- replace data-items value w/ the number of items -->
+            <li><a href="#">Nav Link 1</a></li>
+            <li><a href="#">Nav Link 2</a></li>
+            <li><a href="#">Nav Link 3</a></li>
+         </ul>
+        </nav>
+      </header>
+  </div><!-- /#head -->
+
+  <div id="content">
+    <div id="content-wrapper" class="clearfix wrapper">
+
+      <div class="primary">
+      <article id="main" role="main">
+        <header>
+          <h1>Article header h1</h1>
+          <p>Short description of what the article is about.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.</p>
+          <blockquote><a href="https://github.com/sv1l/yahdrib" title="See yahdrib on GitHub !">yahdrib</a> rocks !</blockquote>
+          <p>Yeah, indeed <q><a href="https://github.com/sv1l/yahdrib" title="See yahdrib on GitHub !">yahdrib</a> rocks</q> a lot !</p>
+        </header>
+
+        <section>
+          <h2>Article section h2</h2>
+          <p>The first section section.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+
+          <hr>
+          <p>Sample text in foreign languages.</p>
+          <p lang="es">Se trata de un texto en español en una página o componente escrito en otro idioma.</p>
+          <p lang="fr">Ceci est un texte en français dans une page ou élément écrit dans une autre langue.</p>
+          <hr>
+        </section>
+        <section>
+          <h2>Article section h2</h2>
+          <p>The second content section.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+        </section>
+
+        <footer>
+          <h3>Article footer h3</h3>
+          <p>At least the conclusion section.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+        </footer>
+      </article>
+      </div>
+
+      <div class="secondary">
+      <aside id="sidebar" role="complementary">
+        <h3>Aside</h3>
+        <p>Related content in addition to the article.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+      </aside>
+      </div>
+
+    </div><!-- /#main-wrapper.wrapper -->
+  </div><!-- /#main -->
+
+  <div id="foot">
+    <footer id="foot-wrapper" class="clearfix wrapper">
+        <p><small>&copy; Copyright Your-Name-Here 2011. <del>All Rights Reserved.</del></small> <b>yahdrib&nbsp;-&nbsp;Public&nbsp;domain</b></p>
+    </footer>
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script type="text/javascript">var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));</script>
+</body>
+</html>
