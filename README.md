@@ -20,12 +20,17 @@ It merges and uses the following codes:
 * Custom Resolution Independent Design
 
 Le logic of this responsive design is that mobiles and narrow medias doesn't need the CSS made for bigger ones, less to download them.
+
 So ther is two files:
-    * One that is shared and contains noramlization, default yahdrib theme and your custom mobile theme.
-    * And an other one with the CSS for the bigger screens.
+
+* One that is shared and contains noramlization, default yahdrib theme and your custom mobile theme.
+* And an other one with the CSS for the bigger screens.
 
 The shared CSS is the base of all, and is splitted into three files (not to be used in production).
+
 So that it's much more understandable, readable, and easy to customize.
+
 But remember, it's made for mobile, so keep it stupidly simple.
+
 One your done don't forget to compile and minify them in the shared CSS file !
 
