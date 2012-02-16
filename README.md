@@ -12,6 +12,7 @@ yahdrib
 An almost ready to use responsive design.
 
 It merges and uses the following codes:
+
 * [html5-boilerplate](https://github.com/h5bp/html5-boilerplate), actually [v3.0.1](https://github.com/h5bp/html5-boilerplate/zipball/v3.0.1)
 * [Modernizr](http://www.modernizr.com) actually 2.5.2 html5-boilerplate build
 * [Respond](https://github.com/scottjehl/Respond) actually [1.1.0](https://github.com/scottjehl/Respond/blob/c82ab674098de89ca5a144ea236a5697011b807c/respond.min.js)
