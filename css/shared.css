@@ -665,3 +665,179 @@ nav a { background: #159; color: #fff !important; }
 #foot {padding: 1em 0 0; text-align: center;}
 
 /*!END customize*/
+
+
+
+
+/*
+ *  ========================================  *
+ *  ========================================  *
+ *
+ *    @import url("02-yahdrib-mobile.css");    *
+ *
+ *  ========================================  *
+ *  ========================================  *
+ */
+
+/* =============== *
+* ==| Helpers |== *
+* =============== */
+
+/* For image replacement */
+.ir,
+.img-replace {
+display: block;
+border: 0;
+text-indent: -999em;
+overflow: hidden;
+background-color: transparent;
+background-repeat: no-repeat;
+text-align: left;
+direction: ltr;
+*line-height: 0;
+}
+.ir br,
+.img-replace {
+display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+display: none !important;
+visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+visibility: hidden;
+}
+
+/* Micro Clearfix contain floats: h5bp.com/q; IE6+, FF3.5+, S4+, O9+, Chr
+* If legacy browsers support needed, use the Legacy Clearfix version below */
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1; /* IE 6/7 */
+}
+
+/* Legacy cross-browser clearfix
+*   http://www.webtoolkit.info/css-clearfix.html
+*   http://umairj.com/68/css-clearfix-best-cross-browser-solution/
+*   https://gist.github.com/935783/
+*   http://css-tricks.com/snippets/css/clear-fix/
+*   http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/
+*/
+.clearfix:before,
+.clearfix:after {
+content: " "; /* FF 2+ */
+display: block;
+height: 0;
+font-size:0;
+line-height: 0;
+overflow: hidden;
+visibility: hidden;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1; /* IE < 8 */
+}
+.clearfix.has-width {
+display: inline-block;
+width: inherit
+}
+* html .clearfix {
+height: 1%;
+overflow: visible;
+}
+
+/* ==================== *
+* ==| Print styles |== *
+* ==================== */
+@media print {
+* {
+background: transparent !important;
+color: black !important; /* Black prints faster: h5bp.com/s */
+-webkit-box-shadow: none !important;
+   -moz-box-shadow: none !important
+        box-shadow: none !important;
+text-shadow: none !important;
+-ms-filter: none !important;
+    filter: none !important;
+}
+a,
+a:visited {
+text-decoration: underline;
+}
+a[href]:after {
+content: " (" attr(href) ")";
+}
+abbr[title]:after {
+content: " (" attr(title) ")";
+}
+.ir a:after,
+.img-replace a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+content: ""; /* Don't show links for images, or javascript/internal links */
+}
+pre,
+blockquote {
+border: 1px solid #999;
+page-break-inside: avoid;
+}
+thead {
+display: table-header-group; /* h5bp.com/t */
+}
+tr,
+img {
+page-break-inside: avoid;
+}
+img {
+max-width: 100% !important;
+}
+@page {
+margin: 0.5cm;
+}
+p,
+h2,
+h3 {
+orphans: 3;
+widows: 3;
+}
+h2,
+h3 {
+page-break-after: avoid;
+}
+}
+
