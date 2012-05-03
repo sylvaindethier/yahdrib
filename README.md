@@ -1,7 +1,7 @@
 yahdrib
 =======
 
-`Y`et  `A`nother  `H`TML5   `D`evice   `R`esolution  `I`ndependent  `B`oilerplate
+**Y**et  **A**nother  **H**TML5   **D**evice   **R**esolution  **I**ndependent  **B**oilerplate
 
 An (almost) ready to use responsive design that fits for all current and future devices.
 
@@ -15,16 +15,13 @@ It merges and uses the following codes:
 
 The logic of this responsive design is that mobiles and narrow medias doesn't need the CSS rules made for bigger ones, less to download them.
 
-So ther is two files:
+So there is two files:
 
 * One that is shared and contains noramlization, default yahdrib theme and your custom mobile theme.
 * And an other one with the CSS for the wider screens.
 
 The shared CSS is the base of all, and is splitted into three files (not to be used in production).
-
 So that it's much more understandable, readable, and easy to customize.
+But remember, it's made for mobile, so keep it stupidly simple (*KISS*).
 
-But remember, it's made for mobile, so keep it stupidly simple (`KISS`).
-
-One your done don't forget to compile and minify them in the shared CSS file !
-
+Once your done don't forget to compile and minify them in the shared CSS file !
