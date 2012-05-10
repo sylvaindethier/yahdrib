@@ -4,7 +4,7 @@
 
 /*!Mobile*/
 
-.wrapper {
+#head-wrapper, #content-wrapper, #foot-wrapper {
   max-width: 30em;
   margin: auto;
   padding: 0 0.5em;

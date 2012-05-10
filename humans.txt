@@ -1,3 +1,4 @@
+/* See http://humanstxt.org/ for more information */
 /* TEAM */
 Your title: Your name.
 Site: email, link to a contact form, etc.
@@ -14,6 +15,6 @@ Name: name or url
 /* SITE */
 Last update: YYYY/MM/DD 
 Standards: HTML5, CSS3,..
-Components: h5-renorid, etc.
+Components: yahdrib, etc.
 Software: Software used for the development
 
