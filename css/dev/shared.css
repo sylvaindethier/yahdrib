@@ -1,4 +1,14 @@
 /*
+ *  =================================================  *
+ *  =================================================  *
+ 
+ *    @import url("00-normalize-h5bp-yahdrib.css");    *
+ 
+ *  =================================================  *
+ *  =================================================  *
+ */
+
+/*
  * This file is a base for the yahdrib narrow.css file. It is not used asis.
  * And is an enhancement from the following CSS files:
  *   | html5-boilerplate v3.0.1 style.css  https://github.com/h5bp/html5-boilerplate/blob/53366f52b8d26eb9ad94c16551622bc3701df5bc/css/style.css
@@ -508,3 +518,158 @@ td img /* yahdrib */{
   font-weight: normal; /* yahdrib */
 }
 
+
+
+
+/*
+ *  ========================================  *
+ *  ========================================  *
+ 
+ *    @import url("01-yahdrib-theme.css");    *
+ 
+ *  ========================================  *
+ *  ========================================  *
+ */
+
+/*
+ * This file is a base for the yahdrib theme. It is not used asis.
+ */
+
+/* ============================ *
+ * ==| Internationalization |== *
+ * ============================ */
+
+/*!in18n*/
+
+/*
+ * Adds visual support for elements that are not in the language of the parent element.
+ * Supported language defined below are English, Spanish, and French.
+ * Additional languages can be easily added or removed.
+ * Compatibility due to the `:not` selector: IE 9+, Firefox 3.5+, Chrome, Safari 3.2+, Opera 9.5+
+ * yahdrib
+ */
+:not(:lang(en)) [lang|="en"]:before,
+:not(:lang(es)) [lang|="es"]:before,
+:not(:lang(fr)) [lang|="fr"]:before
+{
+  display: block;
+  margin: 0.5em -0.5em;
+  font-size: 85%;
+  color: #777;
+}
+:not(:lang(en)) [lang|="en"],
+:not(:lang(es)) [lang|="es"],
+:not(:lang(fr)) [lang|="fr"]
+{
+  padding-left: 1em;
+  border-left: 1px dotted #777;
+  opacity: 0.7;
+  display: block;
+}
+
+/* Use HEX escaped encoding for special characters; http://www.ascii.cl/htmlcodes.htm */
+:not(:lang(en)) [lang|="en"]:before{ content:"English"; }
+:not(:lang(es)) [lang|="es"]:before{ content:"Espa\00f1 ol"; }
+:not(:lang(fr)) [lang|="fr"]:before{ content:"Fran\00e7 ais"; }
+
+
+/* ===================== *
+ * ==| Yahdrib Theme |== *
+ * ===================== */
+
+/*!Theme*/
+
+/* Chromeframe prompt */
+.chromeframe {
+  margin: 0.2em 0; /* h5bp */
+  /*padding: 0.2em 0; /* h5bp */
+  /*background: #ccc; /* h5bp */
+  /*color: black; /* h5bp */
+  /* yahdrib */
+  padding: 0.5em;
+  background-color: #fdd;
+  border: 1px solid #f00; border-left: 0; border-right: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*
+ * Defaults from Normalize not included in this file
+ */
+
+
+
+
+/*
+ *  ========================================  *
+ *  ========================================  *
+ *
+ *    @import url("02-yahdrib-mobile.css");    *
+ *
+ *  ========================================  *
+ *  ========================================  *
+ */
+
+/* ============================= *
+ * ==| Narrow yahdrib layout |== *
+ * ============================= */
+
+/*!Mobile*/
+
+#head-wrapper, #content-wrapper, #foot-wrapper {
+  max-width: 30em;
+  margin: auto;
+  padding: 0 0.5em;
+}
+
+/* Reduce margins & paddings */
+h1, h2, h3, h4, h5, h6 { margin: 0.25em 0; }
+
+p, pre { margin: 0 0 0.5em 0; }
+
+nav li { float:left; display: block; }
+
+nav *[data-items="2"] li { width: 50%; }
+nav *[data-items="3"] li { width: 33.33%; }
+nav *[data-items="4"] li { width: 25%; }
+nav *[data-items="5"] li { width: 20%; }
+nav *[data-items="6"] li { width: 16.66%; }
+
+nav a {
+  display: block;
+  margin: 0 0.25em;
+  padding: 0.5em 0;
+  font-weight: bold;
+  text-align: center;
+}
+nav li:first-child a { margin-left:  0; }
+nav li:last-child a  { margin-right: 0; }
+
+#content { padding: 1em 0; }
+
+/* ===================== *
+ * ==| Author styles |== *
+ * ===================== */
+
+/*!BEGIN customize*/
+
+/*
+ * Blue Colors
+ *   shiny blue:  #39f
+ *   dark blue:   #159
+ */
+
+#head           { border-bottom: 0.5em solid #159; }
+#sidebar, #foot { border-top:    0.5em solid #159; }
+#head, #sidebar, #foot { color: #fff; background: #39f; }
+
+#head ::-moz-selection, #sidebar ::-moz-selection, #foot ::-moz-selection { color: #222; background: #fff; }
+#head ::selection, #sidebar ::selection, #foot ::selection { color: #222; background: #fff; }
+
+nav a { background: #159; color: #fff !important; }
+
+#sidebar { padding: 0 1em 0.5em; }
+
+#foot {padding: 1em 0 0; text-align: center;}
+
+/*!END customize*/

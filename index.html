@@ -9,11 +9,10 @@
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head id="www-sitename-com" data-template-set="yahdrib">
   <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <!-- DNS prefetching for CDN, prefer using href as "//cdn.example.com" h5bp.com/d/head-Tips; html5boilerplate.com/docs/DNS-Prefetching -->
+  <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <!--<link rel="dns-prefetch" href="//cdn.example.com">-->
-  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -55,7 +54,7 @@
 
   <!-- Sitemap, Atom Feed (prefer using this format), RSS Feed -->
   <!--
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml -}}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
   <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
   -->
@@ -84,7 +83,12 @@
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade&nbsp;to&nbsp;a&nbsp;different&nbsp;browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install&nbsp;Google&nbsp;Chrome&nbsp;Frame</a> to experience this site.</p><![endif]-->
+  <!--[if lt IE 7]>
+    <p class=chromeframe>Your browser is <em>ancient!</em>
+      <a href="http://browsehappy.com/">Upgrade&nbsp;to&nbsp;a&nbsp;different&nbsp;browser</a> or
+      <a href="http://www.google.com/chromeframe/?redirect=true">install&nbsp;Google&nbsp;Chrome&nbsp;Frame</a>
+      to experience this site.</p>
+  <![endif]-->
 
   <div id="head">
       <header role="banner" id="head-wrapper" class="clearfix">
@@ -171,7 +175,7 @@
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
+        mathiasbynens.be/notes/async-analytics-snippet -->
   <!--
   <script type="text/javascript">var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));</script>
   -->

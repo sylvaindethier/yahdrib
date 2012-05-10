@@ -31,7 +31,7 @@ nav a { margin: 0 0.5em; padding: 1em; }
 nav li:first-child a { margin-left:  0;}
 nav li:last-child a  { margin-right: 0;}
 
-/*!START customize*/
+/*!BEGIN customize*/
 
 #head           { border-bottom-width: 1em; }
 #sidebar, #foot { border-top-width:    1em; }
@@ -92,7 +92,7 @@ nav a:active { background-color: rgba(17, 85, 153, 0.4); }
   /* Restore from Wide */
   .primary, .secondary { float: none; margin: 0; width: auto; }
 
-  /*!START customize*/
+  /*!BEGIN customize*/
 
   nav { margin:1em 0 0 !important; }
   nav a {
