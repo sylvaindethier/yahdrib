@@ -81,11 +81,11 @@ the JavaScript, jQuery, and Google Analytics ID if needed.
     
     Add your custom CSS for wider media to `css/dev/wider.css` file.
     
-    For production environment, merge and minify the follwing files into one single `css/shared.min.css` single file.
+    For production environment, merge and minify the follwing files into one single `css/shared.min.css` file.
 
-    1. `css/dev/00-normalize-h5bp-yahdrib.css`
-    2. `css/dev/01-yahdrib-theme.css`
-    3. `css/dev/02-yahdrib-mobile.css`
+  1. `css/dev/00-normalize-h5bp-yahdrib.css`
+  2. `css/dev/01-yahdrib-theme.css`
+  3. `css/dev/02-yahdrib-mobile.css`
 
     
     Also minify `css/dev/wider.css` into `css/wider.min.css`.
