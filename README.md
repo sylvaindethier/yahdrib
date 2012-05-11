@@ -1,11 +1,11 @@
 #yahdrib
 
-## See the [page](http://sv1l.github.com/yahdrib/), or the awesome [demo](http://sv1l.github.com/yahdrib/demo/)
-
 __Y__et  __A__nother  __H__TML5   __D__evice   __R__esolution  __I__ndependent  __B__oilerplate
 
 A boilerplate for a __responsive design__ that fits __all__ current and future __devices__.
 
+
+## See the [page](http://sv1l.github.com/yahdrib/), or the awesome [demo](http://sv1l.github.com/yahdrib/demo/)
 
 ---
 
