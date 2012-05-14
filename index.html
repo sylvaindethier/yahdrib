@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="yahdrib : Yet Another HTML5 Device Resolution Independent Boilerplate" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>yahdrib</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sv1l/yahdrib">View on GitHub</a>
+
+          <h1 id="project_title">yahdrib</h1>
+          <h2 id="project_tagline">Yet Another HTML5 Device Resolution Independent Boilerplate</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sv1l/yahdrib/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sv1l/yahdrib/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>yahdrib</h1>
+
+<p><strong>Y</strong>et  <strong>A</strong>nother  <strong>H</strong>TML5   <strong>D</strong>evice   <strong>R</strong>esolution  <strong>I</strong>ndependent  <strong>B</strong>oilerplate</p>
+
+<p>A boilerplate for a <strong>responsive design</strong> that fits <strong>all</strong> current and future <strong>devices</strong>.</p>
+
+<h2>See the <a href="http://sv1l.github.com/yahdrib/">page</a>, or the awesome <a href="http://sv1l.github.com/yahdrib/demo/">demo</a>
+</h2>
+
+<h3>Purpose</h3>
+
+<p>The logic of this responsive design is that we don't want, neither have the time,
+to create CSS for all current and future devices and resolutions.</p>
+
+<p>Moreover mobiles and narrow medias doesn't need the CSS rules made for wider ones,
+less to download them.</p>
+
+<p>So the deal is that there is 3 files:</p>
+
+<ol>
+<li>
+<p>One that is shared and contains normalization, boilerplate, default yahdrib
+theme and your custom mobile theme.</p>
+
+<p>The <code>shared.min.css</code> is the base of all: normalization, base of theme,
+and mobile styles. In developement, there is 3 separated files (<em>css/dev</em>).
+So that it's much more understandable, readable, and easy to customize.</p>
+
+<p>But remember, it's made for mobile, so keep it stupidly simple (<em>KISS</em>).</p>
+</li>
+<li>
+<p>An other one with the CSS for the wider screens.</p>
+
+<p>The <code>wider.min.css</code> contains rules for large and intermediate screens.
+Here, CSS are more for enhanced page layout, theme, etc.</p>
+</li>
+<li><p>At least, the <code>helpers-print.min.css</code> is a final tiny one for the helpers,
+non semantic stuff, and print rules.</p></li>
+</ol><hr><h3>What's inside</h3>
+
+<p><strong>yahdrib</strong> uses the following librairy:</p>
+
+<blockquote>
+<p><a href="https://github.com/h5bp/html5-boilerplate">html5-boilerplate</a> | <a href="https://github.com/h5bp/html5-boilerplate/zipball/v3.0.1">v3.0.1</a></p>
+
+<p><a href="http://www.modernizr.com">Modernizr</a> | 2.5.2 html5-boilerplate build</p>
+
+<p><a href="https://github.com/scottjehl/Respond">Respond</a> | <a href="https://github.com/scottjehl/Respond/blob/c82ab674098de89ca5a144ea236a5697011b807c/respond.min.js">1.1.0</a></p>
+
+<p>Enhanced <a href="https://github.com/necolas/normalize.css">normalize.css from Nicolas Gallagher</a> | <a href="https://github.com/necolas/normalize.css/commit/5e5496c026a0211ac2fdfd62cb59e25455dced55">Feb 07, 2012 release</a></p>
+
+<p>A custom resolution independent design</p>
+</blockquote>
+
+<hr><h3>Get ready, and customize</h3>
+
+<ul>
+<li>
+<p>index.html</p>
+
+<p>Replace / customize / fill in the <code>&lt;head&gt;</code> section such as the title,
+description, keywords, author, Google Webmaster site verification ID, sitemap,
+feeds (Atom / RSS), etc.</p>
+
+<p>Of course customize the different <code>&lt;body&gt;</code> text contents. And at least,
+the JavaScript, jQuery, and Google Analytics ID if needed.</p>
+
+<p>Remove unnecessary code and comments for production environment.</p>
+</li>
+<li>
+<p>humans.txt</p>
+
+<p>Fill in the <code>/* TEAM */</code>, <code>/* THANKS */</code>,  and <code>/* SITE */</code> sections.
+See <a href="http://humanstxt.org/">http://humanstxt.org/</a> for more information about it.</p>
+</li>
+<li>
+<p>CSS files</p>
+
+<p>Customize values, or remove unchanged, from <code>css/dev/01-yahdrib-theme.css</code> file.</p>
+
+<p>Add your own custom CSS for mobiles to <code>css/dev/02-yahdrib-mobile.css</code> file.</p>
+
+<p>Add your custom CSS for wider media to <code>css/dev/wider.css</code> file.</p>
+
+<p>For production environment, merge and minify the follwing files into one single <code>css/shared.min.css</code> file.</p>
+</li>
+</ul><ol>
+<li><code>css/dev/00-normalize-h5bp-yahdrib.css</code></li>
+<li><code>css/dev/01-yahdrib-theme.css</code></li>
+<li>
+<p><code>css/dev/02-yahdrib-mobile.css</code></p>
+
+<p>Also minify <code>css/dev/wider.css</code> into <code>css/wider.min.css</code>.</p>
+</li>
+</ol><ul>
+<li>
+<p>Extra, but well appreciated</p>
+
+<p>Clone, fork, give some feedback, comment, or whatever. Talk about how you like it !</p>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">yahdrib maintained by <a href="https://github.com/sv1l">sv1l</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-8246495-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
