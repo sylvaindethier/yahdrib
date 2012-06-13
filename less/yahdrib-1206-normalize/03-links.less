@@ -1,0 +1,47 @@
+// yahdrib-1206 normalize
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * h5bp
+ */
+
+a {
+    color: @links-globalcolor;
+    text-decoration: @links-globaltextdeco; /* yahdrib */
+}
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ *
+ * normalize
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * h5bp
+ */
+
+a:visited {
+    color: @links-visitedcolor;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ *
+ * normalize
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+    color: @links-hovercolor; /* h5bp */
+    text-decoration: @links-hovertextdeco; /* yahdrib */
+}
+

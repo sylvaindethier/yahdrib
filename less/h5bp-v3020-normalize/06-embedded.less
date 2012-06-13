@@ -1,0 +1,30 @@
+// h5bp-v3020 normalize styles
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ *
+ * normalize
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+    vertical-align: middle; /* h5bp */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ *
+ * normalize
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+

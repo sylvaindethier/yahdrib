@@ -1,0 +1,200 @@
+// yahdrib-1206 normalize
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ *
+ * normalize
+ */
+
+.titles(@typo-titles);
+
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ *
+ * normalize
+ */
+
+dfn[title], /* yahdrib */
+abbr[title] {
+    border-bottom: 1px dotted;
+    cursor: help; /* yahdrib */
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+ *
+ * normalize
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote { 
+    margin: @typo-verticaloffset @typo-horizontaloffset; /* normalize */
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ *
+ * normalize
+ */
+
+i, em, /* yahdrib */
+dfn {
+    font-style: italic;
+}
+
+/*
+ * h5bp
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid @typo-hrcolor;
+    margin: @typo-verticaloffset 0;
+    padding: 0;
+}
+
+/*
+ * h5bp
+ */
+
+ins {
+    background: @typo-insbackground;
+    color: @typo-inscolor;
+    text-decoration: none;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ *
+ * normalize
+ */
+
+mark {
+    font-style: italic; /* h5bp*/
+    font-weight: bold; /* h5bp*/
+    background: @typo-markbackground;
+    color: @typo-markcolor;
+}
+
+/*
+ * yahdrib
+ */
+
+del {
+  text-decoration: line-through;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ *
+ * normalize
+ */
+
+p,
+pre {
+    margin: @typo-paragraphmargin;
+}
+
+/*
+ * yahdrib
+ */
+
+p {
+    text-align: @typo-textalign;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ *
+ * normalize
+ */
+
+
+.monospace, /* Helper; yahdrib */
+pre,
+code,
+kbd,
+samp {
+    .monospaced();
+}
+
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ *
+ * normalize
+ */
+
+
+.pre, /* Helper; yahdrib */
+pre {
+  .preformatted();
+}
+
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ *
+ * normalize
+ *
+ * Idem for blockquotes
+ *
+ * yahdrib
+ */
+
+/* 1 */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: @typo-smallfontsize;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ *
+ * normalize
+ */
+
+sub,
+sup {
+    font-size: @typo-indicefontsize;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+

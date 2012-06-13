@@ -1,0 +1,26 @@
+// yahdrib-1206 normalize
+
+@import "../h5bp-v3020-normalize/06-embedded";
+
+/*
+ * Prevent background-image flicker upon hover
+ *
+ * yahdrib
+ */
+
+html.lt-ie7 {
+  // Escape string, LESS fail to parse otherwise
+  filter: ~'expression(document.execCommand("BackgroundImageCache", false, true))';
+}
+
+/*
+ * Prevent oversizing
+ *
+ * yahdrib
+ */
+
+object,
+embed {
+  max-width: 100%;
+}
+

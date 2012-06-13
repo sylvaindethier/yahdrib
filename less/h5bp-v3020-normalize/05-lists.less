@@ -1,0 +1,45 @@
+// h5bp-v3020 normalize styles
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE6/7
+ *
+ * normalize; removed in h5bp
+ */
+
+//dl { margin: @typo-verticaloffset 0; /* h5bp -- */ }
+
+dd {
+    margin: 0 0 0 @typo-horizontaloffset;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7
+ *
+ * normalize
+ */
+
+//menu, /* h5bp -- */
+ol,
+ul {
+    margin: @typo-verticaloffset 0;
+    padding: 0 0 0 @typo-horizontaloffset;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ *
+ * normalize
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0; /* h5bp */
+    padding: 0; /* h5bp */
+}
+

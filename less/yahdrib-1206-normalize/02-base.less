@@ -1,0 +1,69 @@
+// yahdrib-1206 normalize
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ *
+ * normalize
+ *
+ * 3. Force vertical scrollbar to prevent width resizing on resize; yahdrib
+ * 4. Width to the maximum of the viewport, initial and minimal height fits to viewport
+ *
+ * yahdrib
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; /* 2 */
+    overflow-y: scroll; /* 3 */
+    max-width: 100%; height: 100%; min-height: 100%; /* 4 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ *
+ * normalize
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: @base-fontfamily;
+    color: @base-color; /* h5bp */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ *
+ * normalize
+ *
+ * 1. Minimal height fits to html
+ *
+ * yahdrib
+ */
+
+body {
+    margin: 0;
+    font-size: @base-fontsize; /* h5bp */
+    line-height: @base-lineheight; /* h5bp */
+    min-height: 100%; /* 1 */
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ *
+ * h5bp
+ */
+
+.selection(@base-selectionbackground, @base-selectioncolor);
+

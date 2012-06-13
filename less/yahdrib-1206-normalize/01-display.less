@@ -1,0 +1,71 @@
+// yahdrib-1206 normalize
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ *
+ * normalize
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * 1. Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ *
+ * normalize
+ *
+ * 2. Helper to display inline-block elements
+ *
+ * yahdrib
+ */
+
+
+.inline-block, /* 2 */
+audio, canvas, video { /* 1 */
+    .inlineblock();
+}
+
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ *
+ * normalize
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * 1. Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ *
+ * normalize
+ *
+ * 2. Prevents legacy browsers from displaying <head>, <style>, and <script>
+ *
+ * yahdrib
+ */
+
+head, style, script, /* 2 */
+[hidden] { /* 1 */
+    display: none;
+}
+
