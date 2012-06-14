@@ -1,0 +1,171 @@
+/*! h5bp-v.3.0.2 helpers part of style.css - http://h5bp.com/css
+ *! yahdrib 2012-06 helpers - http://github.com/sv1l/yahdrib */
+
+/* =============================================================================
+ * Helpers
+ * ========================================================================== */
+
+/*
+ * Image replacement
+ *
+ * h5bp
+ */
+
+.ir {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    *line-height: 0;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ *
+ * h5bp
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ *
+ * h5bp
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable when
+ * navigated to via the keyboard: h5bp.com/p
+ *
+ * h5bp
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ *
+ * h5bp
+ */
+
+.invisible { visibility: hidden; }
+
+/*
+ * Micro clearfix contains floats: h5bp.com/q
+ * IE6+, FF3.5+, S4+, O9+, Chr
+ * Use Ultimate clearfix below for legacy browser support
+ *
+ * h5bp
+ */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /* IE 6/7 */
+}
+
+/*
+ * Ultimate clearfix for legacy browser support
+ *   http://www.webtoolkit.info/css-clearfix.html
+ *   http://umairj.com/68/css-clearfix-best-cross-browser-solution/
+ *   https://gist.github.com/935783/
+ *   http://css-tricks.com/snippets/css/clear-fix/
+ *   http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/
+ *
+ * yahdrib
+ */
+
+/*
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* FF 2+ /
+    display: block;
+    height: 0;
+    font-size:0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /* IE < 8 /
+}
+
+.clearfix.has-width {
+    display: inline-block;
+    width: inherit
+}
+* html .clearfix {
+    height: 1%;
+    overflow: visible;
+}
+*/
+
+/*
+ * Show pointer cursor for clickable elements
+ *
+ * yahdrib
+ */
+
+.clickable {
+    cursor: pointer;
+}
+
+/*
+ * Defined in the normalize section to maintain consistency
+ *
+ * yahdrib
+ */
+
+/*
+/* Cross browser inline-block display /
+.inline-block { display: inline-block; *display: inline; *zoom: 1; }
+
+/* Monospaced font /
+.monospace { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Pre-formatted text /
+.pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+*/
+

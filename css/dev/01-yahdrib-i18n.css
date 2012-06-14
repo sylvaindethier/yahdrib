@@ -1,0 +1,53 @@
+/*! yahdrib 2012-06 i18n - http://github.com/sv1l/yahdrib */
+
+/* =============================================================================
+   Internationalization
+   ========================================================================== */
+
+/*
+ * Adds visual support for elements that are not in the language of the parent element.
+ * Supported language defined below are English, Spanish, and French.
+ * Languages can be easily added or removed.
+ * Compatibility due to the `:not` selector: IE9+, FF3.5+, Chr, S3.2+, O9.5+
+ *
+ * yahdrib
+ */
+
+:not(:lang(en)) [lang|="en"]:before,
+:not(:lang(es)) [lang|="es"]:before,
+:not(:lang(fr)) [lang|="fr"]:before {
+    display: block;
+    margin: 0.5em -0.5em;
+    font-size: 85%;
+    color: #777;
+}
+
+:not(:lang(en)) [lang|="en"],
+:not(:lang(es)) [lang|="es"],
+:not(:lang(fr)) [lang|="fr"] {
+    padding-left: 1em;
+    border-left: 1px dotted #777;
+    opacity: 0.7;
+    display: block;
+}
+
+/*
+ * Display foreign languages in their mother tongue
+ * Use HEX escaped encoding for special characters
+ * http://www.ascii.cl/htmlcodes.htm
+ *
+ * yahdrib
+ */
+
+:not(:lang(en)) [lang|="en"]:before{
+    content:"English";
+}
+
+:not(:lang(es)) [lang|="es"]:before{
+    content:"Espa\00f1 ol";
+}
+
+:not(:lang(fr)) [lang|="fr"]:before{
+    content:"Fran\00e7 ais";
+}
+

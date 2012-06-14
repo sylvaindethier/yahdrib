@@ -41,13 +41,13 @@ non semantic stuff, and print rules.
 
 __yahdrib__ uses the following librairy:
 
-> [html5-boilerplate](https://github.com/h5bp/html5-boilerplate) | [v3.0.1](https://github.com/h5bp/html5-boilerplate/zipball/v3.0.1)
+> [html5-boilerplate](https://github.com/h5bp/html5-boilerplate) | [v3.0.2](https://github.com/h5bp/html5-boilerplate/zipball/v3.0.1)
 
-> [Modernizr](http://www.modernizr.com) | 2.5.2 html5-boilerplate build
+> [Modernizr](http://www.modernizr.com) | 2.5.3 html5-boilerplate build
 
-> [Respond](https://github.com/scottjehl/Respond) | [1.1.0](https://github.com/scottjehl/Respond/blob/c82ab674098de89ca5a144ea236a5697011b807c/respond.min.js)
+> [Respond](https://github.com/scottjehl/Respond) | [1.2.0](https://github.com/scottjehl/Respond/blob/b21c5785e8442cca651f532ce72e6e515817ad3d/respond.min.js)
 
-> Enhanced [normalize.css from Nicolas Gallagher](https://github.com/necolas/normalize.css) | [Feb 07, 2012 release](https://github.com/necolas/normalize.css/commit/5e5496c026a0211ac2fdfd62cb59e25455dced55)
+> Enhanced [normalize.css from Nicolas Gallagher](https://github.com/necolas/normalize.css) | [Mar 03, 2012 release](https://github.com/necolas/normalize.css/blob/03575299fc8cba752a51fece7c35343085d6ed09/normalize.css)
 
 > A custom resolution independent design
 

@@ -1,0 +1,34 @@
+/*! yahdrib 2012-06 wide - http://github.com/sv1l/yahdrib */
+
+/* =============================================================================
+   Wide layout
+   ========================================================================== */
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
+    max-width: 75.5em; /* @media:max-width - paddings - margins - scrollbar ~20px ~1.5em */
+}
+
+/*!author wide*/
+
+
+/* =============================================================================
+   Intermediate layout
+   ========================================================================== */
+
+@media screen and (min-width:40em) and (max-width:79.9em) {
+
+    /* Fluid container
+     * Total maximum width is 64em eq. 1024px
+     */
+    .container { padding: 0 1em; max-width: 62em; }
+    /* Fixed width container
+     * width = @media:min-width - paddings - margins - scrollbar (~20px ~1.5em)
+     */
+    /*.container { padding: 0 1em; width: 36.5em; }*/
+
+    /*!author intermediate*/
+
+}
+
