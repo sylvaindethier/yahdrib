@@ -1,13 +1,13 @@
-#yahdrib
+# yahdrib
 
-__Y__et  __A__nother  __H__TML5   __D__evice   __R__esolution  __I__ndependent  __B__oilerplate
+**Y**et **A**nother **H**TML5 **D**evice **R**esolution **I**ndependent **B**oilerplate
 
-A boilerplate for a __responsive design__ that fits __all__ current and future __devices__.
+A boilerplate for a **responsive design** that fits **all** current and future **devices**.
 
-## See the [page](http://sv1l.github.com/yahdrib/), or the awesome [demo](http://sv1l.github.com/yahdrib/demo/)
+## See the [page](http://sylvaindethier.github.io/yahdrib/), or the awesome [demo](http://sylvaindethier.github.io/yahdrib/demo/)
 
 
-### Purpose
+## Purpose
 
 The logic of this responsive design is that we don't want, neither have the time,
 to create CSS for all current and future devices and resolutions.
@@ -37,9 +37,9 @@ non semantic stuff, and print rules.
 
 ---
 
-### What's inside
+## What's inside
 
-__yahdrib__ uses the following librairy:
+**yahdrib** uses the following librairy:
 
 > [html5-boilerplate](https://github.com/h5bp/html5-boilerplate) | [v3.0.2](https://github.com/h5bp/html5-boilerplate/zipball/v3.0.1)
 
