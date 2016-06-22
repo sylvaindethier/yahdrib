@@ -1,4 +1,4 @@
-# yahdrib
+# UNMAINTENED - yahdrib
 
 **Y**et **A**nother **H**TML5 **D**evice **R**esolution **I**ndependent **B**oilerplate
 
